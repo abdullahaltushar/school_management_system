@@ -1,0 +1,78 @@
+{% extends 'student_template/base_template.html' %}
+
+{% block page_title %}
+    Result
+{% endblock page_title %}
+
+{% block main_content %}
+
+{% load static %}
+
+<section class="content">
+        <div class="container-fluid">
+
+            
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Result</h3>
+                        </div>
+
+                        <div class="card-body">
+                           <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                    <tr>
+                                        <th>#ID</th>
+                                        <th>Subject</th>
+                                        <th>Assignments Marks</th>
+                                        <th>Exam Marks</th>
+                                        <th>Total Marks </th>
+                                        <th>status</th>
+                                    </tr>
+                                    </thead>
+                                    
+                                    {% for row in student_result %}
+                                    <tr>
+                                        <td>{{ row.id }}</td>
+                                        <td>{{ row.subject_id.subject_name }}</td>
+                                        <td>{{ row.subject_assignment_marks }}</td>
+                                        <td>{{ row.subject_exam_marks }}</td>
+                                        <td>{{row.total_result}}</td>
+                                        <td>
+                                            {% if row.total_result >= 80 %}
+                                                <span class="alert alert-success">A+</span>
+                                            {% elif row.total_result >= 70  and row.total_result < 80 %}
+                                                <span class="alert alert-success">A</span>
+                                            {% elif row.total_result >= 60  and row.total_result < 70 %}
+                                                <span class="alert alert-success">A-</span>
+                                            {% elif row.total_result >= 50  and row.total_result < 60 %}
+                                                <span class="alert alert-success">B</span>
+                                            {% elif row.total_result >= 40  and row.total_result < 50 %}
+                                                <span class="alert alert-success">C</span>
+                                            {% elif row.total_result >= 33  and row.total_result < 40 %}
+                                                <span class="alert alert-success">D</span>
+                                            {% else %}
+                                                <span class="alert alert-danger">Fail</span>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /.container-fluid -->
+      </section>
+
+  {% endblock main_content %}
+
+{% block custom_js %}
+
+{% endblock custom_js %}
