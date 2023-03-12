@@ -20,3 +20,8 @@
 <li>4. Start the server: python manage.py runserver </li>
 <li>5. Navigate to http://localhost:8000 in your web browser.</li>
 <li>6. You will be redirected to the login page. Enter your credentials to log in.</li>
+
+<h3>User</h3>
+<li>1. Admin </li>
+<li>2. TeacherS </li>
+<li>3. StudentS </li>
