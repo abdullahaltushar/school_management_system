@@ -14,8 +14,9 @@
 <li>5. Install the required packages: pip install -r requirements.txt</li>
 
 <h3>Usage</h3>
-Start the server: python app.py
-Navigate to http://localhost:5000 in your web browser.
-You will be redirected to the login page. Enter your credentials to log in.
-Once you're logged in, you can add classes, subjects, students, and marks using the provided forms.
-To view the dashboard, select a class from the dropdown menu. If no subject is selected, the dashboard will show the aggregated results. If a subject is selected, the dashboard will show the results for that subject.
+<li>1. Go to MongoDB Compass and create "school" database</li>
+<li>2. Go to visual studio code where the project is open</li>
+<li>3. createsuperuser command: python manage.py createsuperuser </li> 
+<li>4. Start the server: python manage.py runserver </li>
+<li>5. Navigate to http://localhost:8000 in your web browser.</li>
+<li>6. You will be redirected to the login page. Enter your credentials to log in.</li>
