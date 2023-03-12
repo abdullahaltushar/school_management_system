@@ -23,5 +23,5 @@
 
 <h3>User</h3>
 <li>1. Admin </li>
-<li>2. TeacherS </li>
-<li>3. StudentS </li>
+<li>2. Teachers </li>
+<li>3. Students </li>
