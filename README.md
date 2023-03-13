@@ -16,10 +16,13 @@
 <h3>Usage</h3>
 <li>1. Go to MongoDB Compass and create "school" database</li>
 <li>2. Go to visual studio code where the project is open</li>
-<li>3. createsuperuser command: python manage.py createsuperuser </li> 
-<li>4. Start the server: python manage.py runserver </li>
-<li>5. Navigate to http://localhost:8000 in your web browser.</li>
-<li>6. You will be redirected to the login page. Enter your credentials to log in.</li>
+<li>3. Open the terminal where the manage.py file is.</li>
+<li>4. createsuperuser command: python manage.py createsuperuser </li> 
+<li>5. Migration command: python manage.py makemigrations </li>
+<li>6. Migrate command: python manage.py migrate </li>
+<li>7. Start the server: python manage.py runserver </li>
+<li>8. Navigate to http://localhost:8000 in your web browser.</li>
+<li>9. You will be redirected to the login page. Enter your credentials to log in.</li>
 
 <h3>User</h3>
 <li>1. Admin </li>
